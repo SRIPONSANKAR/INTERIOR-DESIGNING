@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="0.1"
+    android:installLocation="0"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.Homedesign.ar"
+    platformBuildVersionCode="28"
+    platformBuildVersionName="9">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:glEsVersion="0x30000" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <queries>
+
+        <package
+            android:name="com.google.ar.core" />
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:theme="@ref/0x7f060001"
+        android:label="@ref/0x7f050005"
+        android:icon="@ref/0x7f030000">
+
+        <activity
+            android:label="@ref/0x7f050005"
+            android:name="com.unity3d.player.UnityPlayerActivity"
+            android:launchMode="2"
+            android:screenOrientation="6"
+            android:configChanges="0x40003fff"
+            android:hardwareAccelerated="false">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.notch_support"
+                android:value="true" />
+        </activity>
+
+        <meta-data
+            android:name="unity.tango-enable"
+            android:value="true" />
+
+        <meta-data
+            android:name="unityplayer.SkipPermissionsDialog"
+            android:value="true" />
+
+        <meta-data
+            android:name="unity.build-id"
+            android:value="4042ddc5-9aa7-442c-9efe-73ad064ae105" />
+
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+
+        <meta-data
+            android:name="unity.splash-enable"
+            android:value="true" />
+
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <meta-data
+            android:name="com.google.ar.core.min_apk_version"
+            android:value="210910000" />
+
+        <activity
+            android:theme="@ref/0x0103023a"
+            android:name="com.google.ar.core.InstallActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:launchMode="1"
+            android:configChanges="0x4a0" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+    </application>
+</manifest>
